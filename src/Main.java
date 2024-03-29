@@ -49,6 +49,7 @@ public class Main {
                     byte[] buffer = new byte[fis.available()];
                     fis.read(buffer);
                     zout.write(buffer);
+                    fis.close();
                 } catch (Exception ect) {
                     System.out.println(ect.getMessage());
                 }
